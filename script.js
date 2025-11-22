@@ -53,8 +53,55 @@ function loadContent() {
     // Load gallery
     loadGallery();
     
+    // Load hero background video
+    loadHeroVideo();
+    
     // Set current year in footer
     document.getElementById('currentYear').textContent = new Date().getFullYear();
+}
+
+// Load and cycle through hero background videos
+function loadHeroVideo() {
+    const heroVideo = document.querySelector('.hero-video');
+    if (!heroVideo || !siteConfig.heroVideos || siteConfig.heroVideos.length === 0) {
+        // No videos configured, keep default gradient background
+        return;
+    }
+    
+    let currentVideoIndex = 0;
+    const videos = siteConfig.heroVideos;
+    const duration = (siteConfig.heroVideoDuration || 10) * 1000; // Convert to milliseconds
+    
+    // Load first video
+    function loadVideo(index) {
+        if (videos[index]) {
+            heroVideo.src = videos[index];
+            heroVideo.load();
+            heroVideo.play().catch(e => {
+                console.log('Video autoplay prevented:', e);
+            });
+        }
+    }
+    
+    // Start with first video
+    loadVideo(0);
+    
+    // Cycle through videos
+    if (videos.length > 1) {
+        setInterval(() => {
+            currentVideoIndex = (currentVideoIndex + 1) % videos.length;
+            loadVideo(currentVideoIndex);
+        }, duration);
+    }
+    
+    // Handle video end (loop individual video if only one)
+    heroVideo.addEventListener('ended', () => {
+        if (videos.length === 1) {
+            // Single video - just replay it
+            heroVideo.currentTime = 0;
+            heroVideo.play();
+        }
+    });
 }
 
 // Load gallery (photos and videos)

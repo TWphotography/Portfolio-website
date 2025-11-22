@@ -17,6 +17,21 @@ const siteConfig = {
     siteName: "TW Photography",
     siteTagline: "Professional Real Estate Videography",
     
+    // Hero Background Video/Slideshow
+    // Add video URLs here for a background slideshow
+    // Videos will automatically cycle through
+    // Leave empty array [] to use default gradient background
+    heroVideos: [
+        // Example - add your video URLs here:
+         "https://www.dropbox.com/scl/fi/xp8p2z1a44ul716cxh7bm/37-Reign-Street-R-H.mp4?rlkey=z6lvue93di59ulepg9l5vchhv&st=z3yvo5dm&dl=1"
+        // "https://www.dropbox.com/.../video2.mp4?dl=1",
+        // Or use local videos:
+        // "videos/hero-video1.mp4",
+        // "videos/hero-video2.mp4"
+    ],
+    // Video transition duration in seconds (how long each video plays)
+    heroVideoDuration: 60,
+    
     // About Section Content
     about: {
         text: "Welcome to TW Photography! I specialize in professional real estate videography, creating stunning property tours and marketing videos that showcase properties in their best light. With years of experience, I help real estate professionals and property owners present their listings with cinematic quality videos."
