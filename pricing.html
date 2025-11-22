@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing - TW Photography</title>
+    <meta name="description" content="Professional real estate photography and videography pricing">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="pricing.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo"><a href="index.html" style="text-decoration: none; color: inherit;">TW Photography</a></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#gallery">Gallery</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="pricing.html" class="active">Pricing</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <section class="pricing-hero">
+        <div class="container">
+            <h1>Our Services & Pricing</h1>
+            <p class="subtitle">Professional real estate photography and videography packages</p>
+        </div>
+    </section>
+
+    <!-- Before/After Comparison Section -->
+    <section class="before-after-section">
+        <div class="container">
+            <h2>See the Difference</h2>
+            <p class="section-subtitle">Drag the slider to compare unedited vs edited photos</p>
+            <div class="before-after-container" id="beforeAfterContainer">
+                <!-- Before/After comparisons will be loaded from pricing-config.js -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Packages Section -->
+    <section class="pricing-packages">
+        <div class="container">
+            <h2>Pricing Packages</h2>
+            <div class="packages-grid" id="packagesGrid">
+                <!-- Pricing packages will be loaded from pricing-config.js -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Services -->
+    <section class="additional-services">
+        <div class="container">
+            <h2>Additional Services</h2>
+            <div class="services-grid" id="servicesGrid">
+                <!-- Additional services will be loaded from pricing-config.js -->
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="pricing-cta">
+        <div class="container">
+            <h2>Ready to Get Started?</h2>
+            <p>Contact us today to discuss your project and get a custom quote</p>
+            <a href="index.html#contact" class="cta-button">Get in Touch</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; <span id="currentYear"></span> TW Photography. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="pricing-config.js"></script>
+    <script src="pricing.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
