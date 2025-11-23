@@ -48,7 +48,7 @@ const siteConfig = {
             },
             {
                 type: "Phone",
-                value: "+61 0419696665",
+                value: "0419696665",
                 link: "tel:+610419696665"
             },
             {
