@@ -16,6 +16,34 @@
         currentYearElement.textContent = new Date().getFullYear();
     }
 
+    // Load contact content from config.js
+    function loadContactContent() {
+        const contactText = document.getElementById('contactText');
+        if (contactText && typeof siteConfig !== 'undefined' && siteConfig.contact) {
+            contactText.textContent = siteConfig.contact.text;
+        }
+        
+        const contactInfo = document.getElementById('contactInfo');
+        if (contactInfo && typeof siteConfig !== 'undefined' && siteConfig.contact && siteConfig.contact.info) {
+            contactInfo.innerHTML = siteConfig.contact.info.map(item => {
+                const value = item.link 
+                    ? `<a href="${item.link}" style="color: var(--primary-color); text-decoration: none;">${item.value}</a>`
+                    : item.value;
+                return `<div class="contact-item">
+                    <strong>${item.type}:</strong>
+                    ${value}
+                </div>`;
+            }).join('');
+        }
+    }
+
+    // Load contact content when DOM is ready
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', loadContactContent);
+    } else {
+        loadContactContent();
+    }
+
     // Initialize EmailJS
     // Replace 'YOUR_PUBLIC_KEY' with your EmailJS Public Key
     emailjs.init('YOUR_PUBLIC_KEY');

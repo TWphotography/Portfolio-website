@@ -38,26 +38,26 @@ const siteConfig = {
     },
     
     // Contact Information
-    //contact: {
-     //   text: "Interested in working together? Please get in touch!",
-     //   info: [
-     //       {
-       //         type: "Email",
-       //         value: "info@twphotography.com.au",
-       //         link: "mailto:info@twphotography.com.au"
-       //     },
-       //     {
-       //         type: "Phone",
-       //         value: "0419696665",
-       //         link: "tel:+610419696665"
-       //     },
-       //     {
-        //      type: "Location",
-       //         value: "Goulburn, NSW",
-       //         link: null
-       //     }
-       // ]
-    //},
+    contact: {
+        text: "Interested in working together? Please get in touch!",
+        info: [
+            {
+                type: "Email",
+                value: "info@twphotography.com.au",
+                link: "mailto:info@twphotography.com.au"
+            },
+            {
+                type: "Phone",
+                value: "0419696665",
+                link: "tel:+610419696665"
+            },
+            {
+                type: "Location",
+                value: "Goulburn, NSW",
+                link: null
+            }
+        ]
+    },
     
     // Portfolio Gallery (Photos and Videos)
     // To add content:
