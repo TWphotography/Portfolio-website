@@ -9,18 +9,18 @@ const pricingConfig = {
     beforeAfter: [
         {
             title: "Basic Colour Correction",
-            before: "images/before-after/Base Image.jpeg",
-            after: "images/before-after/Basic Colour Correction.jpeg"
+            before: "images/before-after/Base-Image.jpeg",
+            after: "images/before-after/Basic-Colour-Correction.jpeg"
         },
         {
             title: "Premium Editing & Enhancement",
-            before: "images/before-after/Base Image.jpeg",
-            after: "images/before-after/Premium Editing & Enhancement.jpeg"
+            before: "images/before-after/Base-Image.jpeg",
+            after: "images/before-after/Premium-editing-enhancement.jpeg"
         },
         {
             title: "Virtual Staging",
-            before: "images/before-after/Base Image.jpeg",
-            after: "images/before-after/Virtual Staging.jpeg"
+            before: "images/before-after/Base-Image.jpeg",
+            after: "images/before-after/Virtual-Staging.jpeg"
         }
         // Add more before/after comparisons:
         // {
