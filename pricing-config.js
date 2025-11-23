@@ -34,49 +34,49 @@ const pricingConfig = {
     packages: [
         {
             name: "Basic Package",
-            price: "$299",
+            price: "$239*",
             period: "per property",
-            description: "Perfect for small properties and quick listings",
+            description: "Perfect for small homes and quick listings",
             features: [
                 "10-15 edited photos",
                 "Basic color correction",
                 "HD quality images",
                 "24-48 hour turnaround",
-                "Digital delivery"
+                "Digital delivery via Dropbox"
             ],
             featured: false
         },
         {
             name: "Professional Package",
-            price: "$499",
+            price: "$379*",
             period: "per property",
-            description: "Our most popular package for professional listings",
+            description: "Our most popular choice for high quality property listings",
             features: [
-                "20-25 edited photos",
+                "15-20 edited photos",
                 "Advanced editing & enhancement",
                 "4K quality images",
-                "Virtual staging (1 room)",
-                "24 hour turnaround",
-                "Digital delivery + print-ready files",
-                "Social media optimized images"
+                "2D Floor Plan",
+                "24-48hour turnaround",
+                "Digital delivery via Dropbox",
+                "Virtual styling for up to 2 rooms (if required)"
             ],
             featured: true
         },
         {
             name: "Premium Package",
-            price: "$799",
+            price: "$799*",
             period: "per property",
-            description: "Complete marketing solution with video",
+            description: "Complete property marketing solution including video",
             features: [
-                "30+ edited photos",
-                "Premium editing & enhancement",
+                "20-30+ edited photos",
+                "Premium colour grading & enhancements",
                 "4K quality images",
-                "Virtual staging (up to 3 rooms)",
-                "2-3 minute property video",
-                "Aerial/drone footage (if applicable)",
-                "Same day turnaround",
-                "All digital formats + print-ready",
-                "Social media package included"
+                "Virtual styling for up to 4 rooms",
+                "2-3 minute property showcasevideo",
+                "30 second social media reel",
+                "2D Floor Plan",
+                "24-48 hour turnaround",
+                "Digital delivery via Dropbox"
             ],
             featured: false
         }
@@ -86,33 +86,33 @@ const pricingConfig = {
     additionalServices: [
         {
             name: "Virtual Styling",
-            description: "Add furniture and decor to empty rooms",
-            price: "$99 per room"
+            description: "Add realistic furniture and decor to empty rooms",
+            price: "$59* per room"
         },
         {
             name: "Twilight Photography",
-            description: "Beautiful evening exterior shots",
-            price: "$149"
-        },
-        {
-            name: "Aerial/Drone Photography",
-            description: "Stunning overhead property views",
-            price: "$199"
+            description: "Beautiful, high-impact exterior twilight images",
+            price: "$199*"
         },
         {
             name: "Video Tour",
-            description: "2-3 minute property walkthrough video",
-            price: "$299"
+            description: "2-3 minute cinematic walkthrough video",
+            price: "$420"
+        },
+        {
+            name: "Social Media Reel",
+            description: "30 second fast-paced highlights cut",
+            price: "$119*"
         },
         {
             name: "Floor Plan Creation",
-            description: "Professional floor plan drawings",
-            price: "$149"
+            description: "Professional 2D floor plan ",
+            price: "$99*"
         },
         {
             name: "Rush Service",
             description: "Same day delivery (24 hours)",
-            price: "+$99"
+            price: "+$99*"
         }
     ]
 };

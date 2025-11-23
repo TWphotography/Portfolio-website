@@ -105,7 +105,7 @@ function loadPricingPackages() {
                 <ul class="package-features">
                     ${pkg.features.map(feature => `<li>${feature}</li>`).join('')}
                 </ul>
-                <a href="index.html#contact" class="package-button">Get Started</a>
+                <a href="pricing.html#contact" class="package-button">Get Started</a>
             </div>
         `;
     }).join('');
@@ -127,11 +127,35 @@ function loadAdditionalServices() {
     }).join('');
 }
 
+// Load contact information
+function loadContactInfo() {
+    // Load contact content
+    const contactText = document.getElementById('contactText');
+    if (contactText && siteConfig && siteConfig.contact) {
+        contactText.textContent = siteConfig.contact.text;
+    }
+    
+    // Load contact info
+    const contactInfo = document.getElementById('contactInfo');
+    if (contactInfo && siteConfig && siteConfig.contact && siteConfig.contact.info) {
+        contactInfo.innerHTML = siteConfig.contact.info.map(item => {
+            const value = item.link 
+                ? `<a href="${item.link}" style="color: var(--primary-color); text-decoration: none;">${item.value}</a>`
+                : item.value;
+            return `<div class="contact-item">
+                <strong>${item.type}:</strong>
+                ${value}
+            </div>`;
+        }).join('');
+    }
+}
+
 // Initialize everything when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
     loadBeforeAfter();
     loadPricingPackages();
     loadAdditionalServices();
+    loadContactInfo();
     
     // Set current year in footer
     const yearElement = document.getElementById('currentYear');

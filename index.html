@@ -3,110 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TW Photography - Real Estate Videography</title>
-    <meta name="description" content="Professional real estate videography services">
-    <link rel="stylesheet" href="styles.css">
+    <title>TW Photography - Pricing</title>
+    <meta name="description" content="Professional real estate photography and videography pricing">
+    <link rel="icon" type="image/png" href="TW Photography Logo.png">
+    <meta http-equiv="refresh" content="0; url=pricing.html">
+    <script>
+        // Immediate redirect - runs before page loads
+        (function() {
+            window.location.replace("pricing.html");
+        })();
+    </script>
 </head>
 <body>
-    <nav class="navbar">
-        <div class="container">
-            <div class="logo">TW Photography</div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="pricing.html">Pricing</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <button class="menu-toggle" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-    </nav>
-
-    <section id="home" class="hero">
-        <div class="hero-video-container">
-            <video class="hero-video" autoplay muted loop playsinline>
-                <!-- Video sources will be loaded from config.js -->
-            </video>
-            <div class="hero-overlay"></div>
-        </div>
-        <div class="hero-content">
-            <h1>TW Photography</h1>
-            <p class="tagline">Professional Real Estate Videography</p>
-            <a href="#gallery" class="cta-button">View Gallery</a>
-        </div>
-    </section>
-
-    <section id="gallery" class="gallery-section">
-        <div class="container">
-            <h2>Portfolio Gallery</h2>
-            <p class="section-subtitle" style="text-align: center; color: #666; margin-bottom: 2rem;">Photos and Videos</p>
-            <div class="gallery-filters">
-                <button class="filter-btn active" data-filter="all">All</button>
-                <!-- Add more filter buttons here as needed -->
-            </div>
-            <div class="gallery-grid" id="galleryGrid">
-                <!-- Gallery items will be loaded from config.js -->
-            </div>
-        </div>
-    </section>
-
-    <section id="about" class="about-section">
-        <div class="container">
-            <h2>About</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p id="aboutText">
-                        <!-- Content loaded from config.js -->
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="contact-section">
-        <div class="container">
-            <h2>Contact</h2>
-            <div class="contact-content">
-                <p id="contactText">
-                    <!-- Content loaded from config.js -->
-                </p>
-                <div class="contact-info" id="contactInfo">
-                    <!-- Contact info loaded from config.js -->
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; <span id="currentYear"></span> TW Photography. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <!-- Lightbox for gallery videos -->
-    <div class="lightbox" id="lightbox">
-        <span class="lightbox-close">&times;</span>
-        <span class="lightbox-prev">&#10094;</span>
-        <span class="lightbox-next">&#10095;</span>
-        <div class="lightbox-content">
-            <img class="lightbox-image" src="" alt="" style="display: none;">
-            <video class="lightbox-video" controls style="display: none;">
-                <source src="" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            <div class="lightbox-info">
-                <h3 class="lightbox-title"></h3>
-                <p class="lightbox-caption"></p>
-            </div>
-        </div>
-    </div>
-
-    <script src="config.js"></script>
-    <script src="script.js"></script>
+    <p>Redirecting to <a href="pricing.html">pricing page</a>...</p>
+    <script>
+        // Fallback redirect
+        setTimeout(function() {
+            window.location.href = "pricing.html";
+        }, 100);
+    </script>
 </body>
 </html>
-
