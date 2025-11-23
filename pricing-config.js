@@ -18,7 +18,7 @@ const pricingConfig = {
             after: "images/before-after/Premium-editing-enhancement.jpeg"
         },
         {
-            title: "Virtual Staging",
+            title: "Virtual Styling",
             before: "images/before-after/Base-Image.jpeg",
             after: "images/before-after/Virtual-Staging.jpeg"
         }
