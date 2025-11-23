@@ -39,7 +39,7 @@ const siteConfig = {
     
     // Contact Information
     contact: {
-        text: "Interested in professional real estate videography? Get in touch!",
+        text: "Interested in working together? Please get in touch!",
         info: [
             {
                 type: "Email",
