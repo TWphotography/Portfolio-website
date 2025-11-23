@@ -46,7 +46,7 @@
 
     // Initialize EmailJS
     // Replace 'YOUR_PUBLIC_KEY' with your EmailJS Public Key
-    emailjs.init('YOUR_PUBLIC_KEY');
+    emailjs.init('liY43NSC7r6MeSjDR');
 
     const contactForm = document.getElementById('contactForm');
     const formMessage = document.getElementById('formMessage');
@@ -91,8 +91,8 @@
                 // Replace 'YOUR_SERVICE_ID' with your EmailJS Service ID
                 // Replace 'YOUR_TEMPLATE_ID' with your EmailJS Template ID
                 const response = await emailjs.send(
-                    'YOUR_SERVICE_ID',
-                    'YOUR_TEMPLATE_ID',
+                    'service_v81f1kg',
+                    'template_xueu148',
                     templateParams
                 );
 
