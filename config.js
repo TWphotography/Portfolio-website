@@ -50,11 +50,6 @@ const siteConfig = {
                 type: "Phone",
                 value: "0419696665",
                 link: "tel:+610419696665"
-            },
-            {
-                type: "Location",
-                value: "Goulburn, NSW",
-                link: null
             }
         ]
     },
