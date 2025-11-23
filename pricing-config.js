@@ -8,19 +8,19 @@ const pricingConfig = {
     // Add your before/after photo pairs here
     beforeAfter: [
         {
-            title: "Living Room Enhancement",
-            before: "images/before-after/living-room-before.png",
-            after: "images/before-after/living-room-after.png"
+            title: "Basic Colour Correction",
+            before: "images/before-after/Base Image.jpeg",
+            after: "images/before-after/Basic Colour Correction.jpeg"
         },
         {
-            title: "Kitchen Transformation",
-            before: "images/before-after/kitchen-before.png",
-            after: "images/before-after/kitchen-after.png"
+            title: "Premium Editing & Enhancement",
+            before: "images/before-after/Base Image.jpeg",
+            after: "images/before-after/Premium Editing & Enhancement.jpeg"
         },
         {
-            title: "Bedroom Styling",
-            before: "images/before-after/bedroom-before.png",
-            after: "images/before-after/bedroom-after.png"
+            title: "Virtual Staging",
+            before: "images/before-after/Base Image.jpeg",
+            after: "images/before-after/Virtual Staging.jpeg"
         }
         // Add more before/after comparisons:
         // {
@@ -53,7 +53,7 @@ const pricingConfig = {
             description: "Our most popular choice for high quality property listings",
             features: [
                 "15-20 edited photos",
-                "Advanced editing & enhancement",
+                "Premium editing & enhancement",
                 "4K quality images",
                 "2D Floor Plan",
                 "24-48hour turnaround",
@@ -69,7 +69,7 @@ const pricingConfig = {
             description: "Complete property marketing solution including video",
             features: [
                 "20-30+ edited photos",
-                "Premium colour grading & enhancements",
+                "Premium editing & enhancement",
                 "4K quality images",
                 "Virtual styling for up to 4 rooms",
                 "2-3 minute property showcase video",
