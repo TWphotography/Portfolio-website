@@ -21,6 +21,10 @@ const pricingConfig = {
             title: "Virtual Styling",
             before: "images/before-after/Base-Image.jpeg",
             after: "images/before-after/Virtual-Staging.jpeg"
+        },
+        {
+            title: "Property Showcase Video",
+            video: "https://www.dropbox.com/scl/fi/xp8p2z1a44ul716cxh7bm/37-Reign-Street-R-H.mp4?rlkey=z6lvue93di59ulepg9l5vchhv&st=z3yvo5dm&dl=1"
         }
         // Add more before/after comparisons:
         // {
@@ -95,9 +99,9 @@ const pricingConfig = {
             price: "$199*"
         },
         {
-            name: "Video Tour",
+            name: "Property Showcase Video",
             description: "2-3 minute cinematic walkthrough video",
-            price: "$420"
+            price: "$420*"
         },
         {
             name: "Social Media Reel",

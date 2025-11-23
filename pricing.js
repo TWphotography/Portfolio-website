@@ -6,6 +6,22 @@ function loadBeforeAfter() {
     if (!container || !pricingConfig.beforeAfter) return;
     
     container.innerHTML = pricingConfig.beforeAfter.map((item, index) => {
+        // Check if this is a video item
+        if (item.video) {
+            return `
+                <div class="before-after-item">
+                    <h3>${item.title}</h3>
+                    <div class="video-wrapper">
+                        <video controls class="showcase-video">
+                            <source src="${item.video}" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+            `;
+        }
+        
+        // Regular before/after image comparison
         return `
             <div class="before-after-item">
                 <h3>${item.title}</h3>
@@ -20,7 +36,7 @@ function loadBeforeAfter() {
         `;
     }).join('');
     
-    // Initialize sliders
+    // Initialize sliders (only for image comparisons)
     initBeforeAfterSliders();
 }
 
