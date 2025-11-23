@@ -72,7 +72,7 @@ const pricingConfig = {
                 "Premium colour grading & enhancements",
                 "4K quality images",
                 "Virtual styling for up to 4 rooms",
-                "2-3 minute property showcasevideo",
+                "2-3 minute property showcase video",
                 "30 second social media reel",
                 "2D Floor Plan",
                 "24-48 hour turnaround",
