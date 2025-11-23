@@ -5,10 +5,19 @@ function loadBeforeAfter() {
     const container = document.getElementById('beforeAfterContainer');
     if (!container || !pricingConfig.beforeAfter) return;
     
-    container.innerHTML = pricingConfig.beforeAfter.map((item, index) => {
+    let html = '';
+    let videoSectionStarted = false;
+    
+    pricingConfig.beforeAfter.forEach((item, index) => {
         // Check if this is a video item
         if (item.video) {
-            return `
+            // Add header before first video
+            if (!videoSectionStarted) {
+                html += '<h3 class="video-section-header">Video Trailers</h3>';
+                videoSectionStarted = true;
+            }
+            
+            html += `
                 <div class="before-after-item">
                     <h3>${item.title}</h3>
                     <div class="video-wrapper">
@@ -19,22 +28,24 @@ function loadBeforeAfter() {
                     </div>
                 </div>
             `;
-        }
-        
-        // Regular before/after image comparison
-        return `
-            <div class="before-after-item">
-                <h3>${item.title}</h3>
-                <div class="before-after-wrapper" data-index="${index}">
-                    <img src="${item.before}" alt="Before" class="before-after-before">
-                    <div class="before-after-slider"></div>
-                    <img src="${item.after}" alt="After" class="before-after-after">
-                    <span class="before-after-label before"></span>
-                    <span class="before-after-label after"></span>
+        } else {
+            // Regular before/after image comparison
+            html += `
+                <div class="before-after-item">
+                    <h3>${item.title}</h3>
+                    <div class="before-after-wrapper" data-index="${index}">
+                        <img src="${item.before}" alt="Before" class="before-after-before">
+                        <div class="before-after-slider"></div>
+                        <img src="${item.after}" alt="After" class="before-after-after">
+                        <span class="before-after-label before"></span>
+                        <span class="before-after-label after"></span>
+                    </div>
                 </div>
-            </div>
-        `;
-    }).join('');
+            `;
+        }
+    });
+    
+    container.innerHTML = html;
     
     // Initialize sliders (only for image comparisons)
     initBeforeAfterSliders();
