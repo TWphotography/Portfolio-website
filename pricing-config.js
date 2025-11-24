@@ -24,7 +24,7 @@ const pricingConfig = {
         },
         {
             title: "Property Showcase Video",
-            video: "https://www.dropbox.com/scl/fi/xp8p2z1a44ul716cxh7bm/37-Reign-Street-R-H.mp4?rlkey=z6lvue93di59ulepg9l5vchhv&st=z3yvo5dm&dl=1"
+            video: "https://video1.twphotography.com.au/37%20Reign%20Street-R%26H.mp4"
         }
         // Add more before/after comparisons:
         // {
